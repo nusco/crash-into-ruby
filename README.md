@@ -1,2 +1,1 @@
-# crash-into-ruby
-Ruby Workshop at RubyConf Australia 2015
+"Crash into Ruby" Workshop plan and material - RubyConf Australia 2015
