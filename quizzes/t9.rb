@@ -2,7 +2,7 @@
 
 query = ARGV[0]
 
-dict = File.readlines 'sowpods.txt'
+dict = File.readlines 'dictionary.txt'
 
 numpad = ('A'..'Z').each_slice(3).to_a
 

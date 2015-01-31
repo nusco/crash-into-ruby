@@ -1,0 +1,28 @@
+FIZZBUZZ
+Write a method that takes a number from 1 to 100. For most numbers, the method just returns the number you pass it - but if the number is a multiple of 3, then it returns the string “Fizz” instead of the number; if the number is a multiple of five, then it returns “Buzz”; and if the number is a multiple of both three and five, then it returns “FizzBuzz”.
+
+YOUR AGE
+Write one or more programs that can calculate your age in seconds. Can you come up with two different solutions?
+
+FACTORIAL
+Write a method that calculates the factorial of a number.
+Advanced challenge: Can you find a way to add the method to the Fixnum class? How would you call the method?
+
+BASIC:
+Grandfather Clock (http://pine.fm/LearnToProgram/?Chapter=10)
+
+Credit Card Checker (http://rubyquiz.com/quiz122.html)
+
+MID: T9
+
+GUESS THE NUMBER (The user guesses)
+Write a program that comes up with a random number between 1 and 100. The user tries to guess the number. The program tells the user whether the number is right, too high, or too low.
+
+GUESS THE NUMBER (The computer guesses)
+Write a program that asks you to come up with a number between 1 and 100, and then tries to guess it. You must tell the program whether the number is too high (by inputting ">"), too low ("<") or just right ("="). For bonus points, make the program better at understanding whether you're cheating: if your answers are inconsistent, the program shoudl complain.
+
+Easy(ish): COUNT THE WORDS
+Download the text of your favourite poem from the web, and write a Ruby program that counts the words in the poem.
+
+Hard(ish): T9
+Download a text file online that includes an entire dictionary. Now write a program that given a sequence of decimal digits, returns a list of candidate words for T9 autocompletion.
