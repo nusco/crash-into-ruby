@@ -1,0 +1,8 @@
+Easy(ish): COUNT THE WORDS
+Download the text of your favourite poem from the web, and write a Ruby program that counts the words in the poem.
+
+Hard(ish): T9
+Download a text file online that includes an entire dictionary. Now write a program that given a sequence of decimal digits, returns a list of candidate words for T9 autocompletion.
+
+Hard: ANAGRAMS
+Download a text file online that includes an entire dictionary. Now, given a word, find all the words in the text that are anagrams of the given word. How much time does the program take? Can you optimize it to make it faster?

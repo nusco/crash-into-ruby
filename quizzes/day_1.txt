@@ -1,0 +1,39 @@
+=== Ruby for Java/.NET people - Basics ===
+
+14:00 - PART I (2:00')
+15' - Slides: *1_intro.key
+05' - Install Check
+       Windows disclaimer
+       "I don't know everything" disclaimer
+       Today: the language. Tomorrow: practical stuff.
+30'- Hands on!
+      "Please follow, ask questions, pair"
+      "ruby <file.rb>" and irb
+      *handson_1.rb (basics)
+      Don't make it longer! 30' are enough.
+      After this, double-check that the level is right.
+30'- Katas!
+       *katas_1.txt
+25'- Slides: *2_tools.key
+15'- Break
+
+16:00 - PART II (2:00')
+30' - Hands on!
+        *handson_2.rb (OOP)
+30' - Katas!
+        *katas_2.txt
+25' - Slides: *3_values.key
+20' - Hands on!
+        *handson_3.rb (modules and more OOP)
+15'- Break
+
+18:00 - PART III (3:00')
+30' - Katas!
+        *katas_3.txt
+30' - Slides: *4_design.key
+10' - Slides: *5_outro.key
+90' - Ruby Quiz
+        Go to www.rubyquiz.com and find a quiz to solve
+15' - Q&A
+5'  - Perfection Game feedback session
+

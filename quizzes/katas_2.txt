@@ -1,0 +1,5 @@
+GUESS THE NUMBER (The user guesses)
+Write a program that comes up with a random number between 1 and 100. The user tries to guess the number. The program tells the user whether the number is right, too high, or too low.
+
+GUESS THE NUMBER (The computer guesses)
+Write a program that asks you to come up with a number between 1 and 100, and then tries to guess it. You must tell the program whether the number is too high (by inputting ">"), too low ("<") or just right ("="). For bonus points, make the program better at understanding whether you're cheating: if your answers are inconsistent, the program shoudl complain.

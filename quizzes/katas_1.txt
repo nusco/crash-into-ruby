@@ -1,0 +1,9 @@
+FIZZBUZZ
+Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
+
+YOUR AGE
+Write one or more programs that can calculate your age in seconds. Can you come up with two different solutions?
+
+FACTORIAL
+Write a method that calculates the factorial of a number.
+Advanced challenge: Can you find a way to add the method to the Fixnum class? How would you call the method?
