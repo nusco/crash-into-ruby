@@ -1,148 +1,78 @@
-#Crash Into Ruby
+###Crash Into Ruby
 
-##Description
+#### Schedule
 
-This is a one-day crash-course for Ruby beginners and intermediates. It will take you all the way through from basic Ruby coding, to the secrets of the object model, and up to advanced metaprogramming techniques. Whether you're a Java developer, a Python guru, or a JavaScript wizard, this workshop will show you what's the big deal about Ruby, why people love it so much, and why idiomatic Ruby code looks... different.
+* 9am: Registration
+* 10.00am: Workshop Part 1
+* 11.00am: Morning tea
+* 11.30am: Workshop Part 2
+* 1.00pm: Lunch
+* 2.00pm: Workshop Part 3
+* 3.30pm: Afternoon tea
+* 4.00pm: Workshop Part 4
+* 5pm: Closing
 
-This is a hands-on experience, so bring your own computer with Ruby installed.
+####Prepare...
 
-##Schedule
+* A complete list of participants' levels, current languages, and other details
+* Nametags
+* List of names and addresses (plus opt-in to distribute)
+* Program
+* List of suggested books (Pickaxe, Metaprogramming, Sandi Metz's POODR) in Git repo
+* "Missing Lines" Quiz sheet
+* Other Quiz sheets
+* USB key with GH data
+* Large post-its for Perfection Game
+* Post-its and markers just in case
 
-9am - Registration (rooms available for set up - please let me know if you require more time)
-10.00am - Workshops commence
-11.00am - morning tea
-11.30am - workshop cont.
-1.00pm - lunch
-2.00pm - workshop cont.
-3.30pm - afternoon tea
-4.00pm - workshop cont.
-4.30pm or 5pm - close
+####Workshops Part 1: The Basics (1h)
 
-##Morning, 1st Half (10am, 1 hour)
+NOTE: handson l and 2 (blocks) together shouldn't take more than 30'
 
-###Intro (15' - make it shorter)
+* Hello!
+* Distribute nametags, programs
+* Explain course structure
+* Disclaimers: I don't know everything, different levels of experience
+* Clone GH repo
+* Form pairs
+* Check installations ("ruby --version")
+* "ruby <file.rb>" and irb
 
-- Hello!
-- Wear nametags
-- Level? (Raise your hand: "absolute beginner", "just started", "some experience")
-- Which lang do you use regularly?
-- Course structure: Learn by following + Exercises
-- "I don't know everything" disclaimer
-- Form pairs
+* handson 1.rb (basics)
+* handson 2.rb (blocks)
+* Block quizzes: something for beginners, Grandfather Clock, Ruby# (fixed)
+	http://pine.fm/LearnToProgram/?Chapter#10
 
-### Getting Started
+####Workshops Part 2: OOP (1.5h)
 
-NOTE: handson_1 and _2 (blocks) took 30' together (no more than that!)
-However, now I'll have quizzes in between
-Handson OOP took 25' to 30'
-Handson Modules took 20'
+The two handsons should take a total of 50'. The remaining 40' is for exercises.
 
+* handson 3.rb (OOP)
+* handson 4.rb (Modules)
+* OOP Quizzes: the dragon one from Chris Pine for beginners? what else
 
-10:35 - Hands on!
-    - "Please follow, ask questions, pair"
-	- Check installations ("ruby --version")
-	- "ruby <file.rb>" and irb
-	- *handson_1.rb (basics)
+####Workshops Part 3: The Object Model (1.5h)
 
-###Three Ruby Things, Part 1: Blocks
-11:05 - Write something (15')
+* The Ruby Object Model, part 1
+* Object model quizzes: Missing lines, Tangle of modules
+* The Ruby Object Model, part 2
+* Quiz: Class Taboo (with alternative for beginners)
 
-###Your Very First Program
+####Workshops Part 4: Let's go Meta! (1h)
 
-##Break: Morning Tea (11am, 30')
+* The Ruby Object Model, part 3
+* Metaprogramming Quizzes: Module Trouble, Bug Hunt, Let's Break Ruby (a mix of Broken Math, reassigning a class, etc)
+* The Ruby philosophy (mix of slides from Metaprogramming presentation and cognitive psychology presentation)
 
-##Morning, 2nd Half (11:30am, 1.5 hours)
+* Announce that I will distribute my book
+* Ask to confirm email, and whether it's OK to send your address to the other participants (double-check Catherine in particular, because her mail is bouncing)
+* Perfection Game feedback
 
-- EXERCISE: Grandfather Clock
+####Consider...
 
 - EXERCISE: DrawBox (as a method)
-- Intro: il + duro dei 3 giorni di corso
-
-###Three Ruby Things, Part 2: Modules
-
-##Break: Lunch (1pm, 1 hour)
-
-##Evening, 1st Half (2pm, 1.5 hours)
-
-##Break: Afternoon Tea (3:30pm, 30')
-
-##Evening, 2nd Half (4pm, 1 hour)
-
-###Three Ruby Things, Part 3: Metaprogramming
-
-##The End (5pm)
-
-* Distribute handout: books
-	* The Ruby Programming Language or the pickaxe
-	* Metaprogramming Ruby 2
-	* Pragmatic Object Oriented Programming in Ruby
-	* (add other resources?)
-
----
-
-stuff to consider:
-
-## The truth about classes
-  - Classes are objects
-    - Class names
-  - Classes vs. Modules
-  - The object model
-
-## Everything is an object
-  - the top level
-  - Kernel
-
-## self
-  - In methods
-  - In classes
-  - Defining class methods with def self.method
-  - Open classes
-    - Dangers
-
-14:00 - PART I (2:00')
-15' - Slides: *1_intro.key
-05' - Install Check
-       Windows disclaimer
-       "I don't know everything" disclaimer
-       Today: the language. Tomorrow: practical stuff.
-30'- Hands on!
-      "Please follow, ask questions, pair"
-      "ruby <file.rb>" and irb
-      *handson_1.rb (basics)
-      Don't make it longer! 30' are enough.
-      After this, double-check that the level is right.
-30'- Katas!
-       *katas_1.txt
-25'- Slides: *2_tools.key
-15'- Break
-
-16:00 - PART II (2:00')
-30' - Hands on!
-        *handson_2.rb (OOP)
-30' - Katas!
-        *katas_2.txt
-25' - Slides: *3_values.key
-20' - Hands on!
-        *handson_3.rb (modules and more OOP)
-15'- Break
-
-18:00 - PART III (3:00')
-30' - Katas!
-        *katas_3.txt
-30' - Slides: *4_design.key
-10' - Slides: *5_outro.key
-90' - Ruby Quiz
-        Go to www.rubyquiz.com and find a quiz to solve
-15' - Q&A
-5'  - Perfection Game feedback session
-
-## Quizzes from the book
-
-## Optional Quizzes
-
-BASIC:
-FizzBuzz (http://rubyquiz.com/quiz126.html)
-Grandfather Clock (http://pine.fm/LearnToProgram/?Chapter#10)
-Extra: Quanti secondi hai?
-
-Credit Card Checker (http://rubyquiz.com/quiz122.html)
+- FizzBuzz (http://rubyquiz.com/quiz126.html)
+- Quiz: "how many seconds do you have?"
+- Credit Card Checker (http://rubyquiz.com/quiz122.html)
+- Check katas in repo
+- Quiz: Checked Attributes (for experts)

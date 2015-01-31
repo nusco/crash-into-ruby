@@ -21,9 +21,11 @@ a + b # => 2
 
 # hello, world
 # how would you do it?
+print "Hello, world!"
+puts "Hello, world!"  # => nil
+
 # (print() vs puts())
 
-puts "Hello, world!"  # => nil
 
 # string quotes
 
