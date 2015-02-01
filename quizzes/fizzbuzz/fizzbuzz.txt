@@ -1,0 +1,3 @@
+http://rubyquiz.com/quiz126.html
+
+Write a method that takes a number from 1 to 100. For most numbers, the method just returns the number you pass it - but if the number is a multiple of 3, then it returns the string “Fizz” instead of the number; if the number is a multiple of five, then it returns “Buzz”; and if the number is a multiple of both three and five, then it returns “FizzBuzz”.

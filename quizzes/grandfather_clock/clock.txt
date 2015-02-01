@@ -1,3 +1,5 @@
+see http://pine.fm/LearnToProgram/?Chapter#10
+
 GRANDFATHER CLOCK
 Write a GrandfatherClock class that has a configurable alarm. When you create the clock, you pass it a block, like this:
   clock = GrandfatherClock.new { puts 'DONG!' }
