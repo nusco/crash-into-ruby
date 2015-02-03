@@ -4,7 +4,9 @@
 # - instance variables
 # - attributes
 
+"abc".reverse # => "cba"
 "abc".class   # => String
+"abc".methods.sort # => ...
 1.class       # => Fixnum
 Fixnum.instance_methods.sort # ...
 1 + 2         # => 3
@@ -39,6 +41,8 @@ end
 
 obj = MyClass.new(10)
 obj.x         # => 10
+obj.x=(11)
+obj.x= 11
 obj.x = 11
 obj.x         # => 11
 
@@ -84,3 +88,5 @@ end
 obj2 = MySubclass.new(12)
 obj2.x         # => 12
 obj2.y         # => 10
+
+# anything else you want to know about classes and objects?
