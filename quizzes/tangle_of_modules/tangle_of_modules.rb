@@ -1,5 +1,6 @@
 # In this quiz, you're not going to write (or even run) code until the very last
-# moment. You're supposed to reason about this and discuss it with your pair.
+# moment. Instead of editing the code in this file, you're supposed to think about
+# it and discuss it with your pairing partner.
 #
 # Your company asked you to fix a bug in its legacy printing system. According
 # to the company’s bug tracker, there is a problem with the code below. The bug
