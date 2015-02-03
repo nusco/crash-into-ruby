@@ -1,0 +1,23 @@
+This exercise is an expanded version of the one on https://pine.fm/LearnToProgram/chap_09.html. It's an open-ended exercise, so it doesn't have a solution in the "solutions" directory. Just go on until you're happy. If you're an expert, try to develop these features with Test-Driven Development.
+
+Make an OrangeTree class. Here are a few things that your tree can have:
+
+- A height() method which returns the tree's height.
+
+- A oneYearPasses() method, which, when called, ages the tree one year. Each year the tree grows taller (however much you think an orange tree should grow in a year).
+
+- After some number of years (again, your call) the tree should die.
+
+- For the first few years, the tree should not produce fruit, but after a while it should.
+
+- I guess that older trees produce more each year than younger trees... whatever you think makes most sense.
+
+- Of course, you should be able to countTheOranges() (which returns the number of oranges on the tree), and pickAnOrange() (which reduces the @orangeCount by one and returns a string telling you how delicious the orange was, or else it just tells you that there are no more oranges to pick this year).
+
+- Make sure that any oranges you don't pick one year fall off before the next year.
+
+- Right before a tree dies, serialize it to a JSON file (use Ruby's json standard library).
+
+- Set up a page with Sinatra (http://www.sinatrarb.com/) that loads a JSON tree and shows its stats on a web page: how old it is, how many oranges it's carrying, and so on. To install Sinatra, install Bundler first (with "gem install bundler"), and then create a Gemfile that requires Sinatra. See http://bundler.io.
+
+- If you got this far, then congratulations: you're really fast. It's probably time to stop building your tree and help others do the same!
