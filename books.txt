@@ -1,0 +1,21 @@
+Here are a few Ruby books you can read after this workshop.
+
+
+- If you're a beginner at Ruby: "Programming Ruby 1.9 & 2.0", by Dave Thomas (https://pragprog.com/book/ruby4)
+
+  Some people love it, some people don't. To me, this is still *the* book to learn Ruby from. I love the style, and I like how comprehensive it is.
+
+
+- If you're intermediate: "Metaprogramming Ruby 2", by Paolo Perrotta (pragprog.com/titles/ppmetr2)
+
+  I'm biased here, because I wrote this book myself. I wanted it to be the ideal "second Ruby book". You'll get your own copy after the workshop, so judge for yourself.
+
+
+- If you want to learn OOP in Ruby: "Practical Object-Oriented Design in Ruby", by Sandi Metz (http://www.sandimetz.com/products)
+
+  One of the best programming books ever. I highly recommend it, whatever level you're at. Sandi is the writer I wish I were.
+
+
+- Special mention: "Eloquent Ruby", by Russ Olsen (http://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional-Series/dp/0321584104)
+
+  To be honest, I didn't read it yet - but I only hear great things about it. Russ has a wonderfully clear style, so I'm not surprised that people are loving this book.
