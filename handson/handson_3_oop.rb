@@ -6,7 +6,7 @@
 
 "abc".reverse # => "cba"
 "abc".class   # => String
-"abc".methods.sort # => ...
+"abc".methods.sort # ...
 1.class       # => Fixnum
 Fixnum.instance_methods.sort # ...
 1 + 2         # => 3
@@ -15,13 +15,13 @@ Fixnum.instance_methods.sort # ...
 # classes and objects
 
 class MyClass
-  def hello
-    "hello!"
+  def an_instance_method
+    "MyClass#an_instance_method()"
   end
 end
 
 obj = MyClass.new
-obj.hello
+obj.an_instance_method # => "MyClass#an_instance_method()"
 
 # initialize() and instance variables
 
@@ -59,6 +59,16 @@ obj.methods.sort        # ...
 obj.an_attribute = 11
 obj.an_attribute        # => 11
 
+# class methods
+
+class AnotherClass
+  def self.a_class_method
+    "AnotherClass.a_class_method()"
+  end
+end
+
+AnotherClass.a_class_method # => "AnotherClass.a_class_method()"
+
 # inheritance
 
 class MyString < String
@@ -67,7 +77,7 @@ class MyString < String
   end
 end
 
-MyString.ancestors  # => [MyString, String, Enumerable, Comparable, Object, Kernel]
+MyString.ancestors  # => [MyString, String, Comparable, Object, Kernel, BasicObject]
 s = MyString.new("abc")
 s.hello     # => "hello!"
 s.reverse   # => "cba"
