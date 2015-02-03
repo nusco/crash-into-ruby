@@ -7,7 +7,7 @@
 # I will be slow, so experiment
 # Ask questions!
 
-# start irb (and what it is)
+# start irb (or pry)
 
 1 + 1 # => 2
 
@@ -15,9 +15,13 @@
 
 a = 1
 b = 2
-a + b # => 2
+a + b # => 3
 
 # first difference with Java/C#: no type declarations
+
+# constants
+S = "xyz" # !> previous definition of S was here
+S = "xyzzy" # !> already initialized constant S
 
 # hello, world
 # how would you do it?
@@ -25,11 +29,14 @@ print "Hello, world!"
 puts "Hello, world!"  # => nil
 
 # (print() vs puts())
-
+# ignore the "=> nil" part for now
 
 # string quotes
 
 born = 1969
+Time.now
+Time.now.year
+
 puts "Happy #{Time.now.year - born}th birthday!"
 puts 'Happy #{Time.now.year - born}th birthday!'
 
@@ -38,56 +45,52 @@ puts 'Happy #{Time.now.year - born}th birthday!'
 "abc".reverse()
 "abc".reverse
 
-# constants
-S = "xyz"
-S = "xyzzy" # !> already initialized constant S
-
 # functions
 
 puts("Hello, world!")
 
 def f()
-  puts("Hello, world!")
+  puts "Hello, world!"
 end
 
 f()   # => nil
 f     # => nil
 
-def hello(name)
+def greet(name) # !> previous definition of greet was here
   result =  "Hello, #{name}!"
   return result
 end
 
-hello("world")  # => "Hello, world!"
+greet("world")  # => "Hello, world!"
 
-def hello(name) # !> method redefined; discarding old hello
+def greet(name) # !> previous definition of greet was here
   "Hello, #{name}!"
 end
 
-hello("world")  # => "Hello, world!"
+greet("world")  # => "Hello, world!"
 
-# why am I so repetitive?
-# we "learn from our hands"
+# I'm so repetitive because we "learn from our hands"
+# Note: I redefined an existing method!
 
-# if
+# conditionals
 
-def hello(name) # !> method redefined; discarding old hello
-  if name == 'master'
-    "I bow before you, master"
+def greet(name) # !> previous definition of greet was here
+  if name.empty?
+    "Hi, whoever you are!"
   else
     "Hello, #{name}!"
   end
 end
 
-hello "world"   # => "Hello, world!"
-hello "master"  # => "I bow before you, master"
+greet "world"   # => "Hello, world!"
+greet ""        # => "Hi, whoever you are!"
 
-def hello(name) # !> method redefined; discarding old hello
-  return "I bow before you, master" if name == 'master'
+def greet(name) # !> method redefined; discarding old greet
+  return "Hi, whoever you are!" if name.empty?
   "Hello, #{name}!"
 end
 
-hello "master"  # => "I bow before you, master"
+greet ""  # => "Hi, whoever you are!"
 
 # while
 
@@ -96,16 +99,20 @@ puts (i = i * 2) while i < 100
 
 # method names
 
-s = hello "world"
+s = greet "world"
+
+s.empty?      # => false
+s.empty?()    # => false
+
 s.gsub(/wor.d/, "Mars") # => "Hello, Mars!"
 s # => "Hello, world!"
 s.gsub!(/wor.d/, "Mars") # => "Hello, Mars!"
 s # => "Hello, Mars!"
 
-s.start_with? "Hello" # => true
-
 # arrays
 stuff = ["hello", "world"]
+stuff.class # => Array
+stuff.methods # ...
 stuff << 42
 stuff             # => ["hello", "world", 42]
 stuff.pop         # => 42
@@ -115,10 +122,10 @@ stuff.size        # => 2
 
 # hashes (and symbols)
 more_stuff = {"a" => "hello", "b" => "world"}
+more_stuff.class  # => Hash
+more_stuff.methods  # ...
+
 more_stuff = {:a => "hello", :b => "world"}
 more_stuff[:a]    # => "hello"
 
 more_stuff = {a: "hello", b: "world"}
-
-more_stuff.class  # => Hash
-more_stuff.methods  # ...
