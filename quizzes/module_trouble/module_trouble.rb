@@ -3,7 +3,7 @@
 
 module MyModule
   def my_method
-    'hello'
+    'my_method()'
   end
 end
 
@@ -21,7 +21,8 @@ puts "OK!"
 # a class method on MyClass?
 #
 # (If you happen to know about the extend() method, try *not* to use
-# it - it makes things too easy, so it's considered cheating. :)
-# Instead, think about the object model and singleton classes.
-# How would you modify the code that you just looked at so that it
-# works as expected?
+# it - it makes things so easy, you can call it cheating. :)
+# Instead, think about the object model and singleton classes.)
+#
+# How would you modify the code above so that you can call
+# MyClass.my_method() without getting an exception?
