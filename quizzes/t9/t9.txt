@@ -1,1 +1,0 @@
-Download a text file online that includes an entire dictionary. Now write a program that given a sequence of decimal digits, returns a list of candidate words for T9 autocompletion.
