@@ -99,4 +99,15 @@ obj2 = MySubclass.new(12)
 obj2.x         # => 12
 obj2.y         # => 10
 
+# self
+
+class SomeClass
+  def greetings
+    "Hello! I am #{self}"
+  end
+end
+
+obj = SomeClass.new # => #<SomeClass:0x007fef5c04cce0>
+obj.greetings     # => "Hello! I am #<SomeClass:0x007fef5c04cce0>"
+
 # anything else you want to know about classes and objects?
