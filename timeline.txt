@@ -1,0 +1,13 @@
+
+10.00 - Part 1: The Basics
+11.00 - Tea break
+11.30 - Part 2: Some OOP
+
+13:00 - Lunch break
+
+14:00 - Part 3: The Object Model
+15.30 - Tea break
+16:00 - Part 4: Let's go Meta!
+
+17:00 - Closing
+
