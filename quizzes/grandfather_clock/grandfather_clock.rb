@@ -1,45 +1,61 @@
-# This quiz is a simplified version of the one in http://pine.fm/LearnToProgram/?Chapter#10.
-# To solve it, you need to know how to convert a Ruby block to an object and execute it later.
+# This is the original OOP version of the Grandfather Clock quiz from
+# http://pine.fm/LearnToProgram/?Chapter#10. To solve it, you need to know how
+# to convert a Ruby block to an object and execute it later - and you also need
+# to know the basics of OOP: how to define a class, initialize an object, and
+# so on.
 #
-# Write a grandfather_clock() method that takes the time of the day (in hours) and a blocl.
-# When you call it, it executes the block multiple times, depending on the time of the day:
+# Write a GrandfatherClock class that has a configurable alarm. When you create
+# the clock, you pass it a block, like this:
 #
-#    grandfather_clock.chime(1) { puts 'DING!' }      # => (1 am - prints "DING!" once)
-#    grandfather_clock.chime(11) { puts 'DING!' }     # => (11 am - prints "DING!" eleven times)
-#    grandfather_clock.chime(13) { puts 'DING!' }     # => (1 pm - prints "DING!" once)
+#    clock = GrandfatherClock.new { puts 'DING!' }
+#
+# Then you set the time of the day, like this:
+#
+#  clock.time = 20
+#
+# After you configure the clock, you can call:
+#
+#    clock.chime
+#
+# Now the clock will execute the method once at 1pm, four times at 4am, and so on.
 
 # Here is a test for the clock:
 
 require 'test/unit'
 
 class TestGrandfatherClock < Test::Unit::TestCase
+  def setup
+    @chimes = 0
+    @clock = GrandfatherClock.new { @chimes += 1 }
+  end
+  
   def test_chime_once_at_1am
-    chimes = 0
+    @clock.time = 1
     
-    grandfather_clock.chime(1) { chimes += 1 }
+    @clock.chime
     
-    assert_equal 1, chimes
+    assert_equal 1, @chimes
   end
   
   def test_chime_eleven_times_at_11am
-    chimes = 0
+    @clock.time = 11
     
-    grandfather_clock.chime(11) { chimes += 1 }
+    @clock.chime
     
-    assert_equal 11, chimes
+    assert_equal 11, @chimes
   end
   
   def test_chime_once_at_1pm
-    chimes = 0
+    @clock.time = 13
     
-    grandfather_clock.chime(13) { chimes += 1 }
+    @clock.chime
     
-    assert_equal 1, chimes
+    assert_equal 1, @chimes
   end
 end
 
 # Now let's go for the clock itself:
 
-def grandfather_clock(time)
-  # TODO: it's your turn now. Make the tests pass!
+class GrandfatherClock
+  # TODO: it's up to you now. Make the tests green!
 end
